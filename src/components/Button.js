@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types'
+import * as React from 'react';
 import buttonfunc from './ButtonFunction'
 const Button = ({color,text}) => {
-
-  return  <button
+  return <button
    onClick={buttonfunc} 
    className='btn'
     style={{backgroundColor:color}} >
     {text}</button>
+    
 }
 
 Button.defaultProps = {
