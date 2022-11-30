@@ -1,4 +1,4 @@
-import Header from "./components/Header"
+import Header from "./Header"
 import React from 'react';
 import Webtext from './Webtext'
 function App() {

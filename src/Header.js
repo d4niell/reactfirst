@@ -4,7 +4,9 @@ import React from 'react';
 import Search from './Search'
 const Header = ({ title }) => {
     return (
+        
         <header className='header'>
+            
             <h2>my own website project</h2>
             <Search/>
             <Button/>
@@ -13,6 +15,7 @@ const Header = ({ title }) => {
 
     )
 }
+
 
 // const HeadingStyle = {
 //     color: 'red',

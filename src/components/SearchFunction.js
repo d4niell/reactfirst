@@ -1,10 +1,10 @@
-import Search from './Search'
+import Search from '../Search'
 
 
 const SearchFunc = () => {
     console.log('executed')
     var type_timer;
-    var finished_writing_interval = 1;
+    var finished_writing_interval = 100;
     var my_input = document.getElementById("search_input");
     
     //Start timeout when user start typing

@@ -19,12 +19,12 @@ body {
 
 .header {
   text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
   background-color: rgba(175, 180, 248, 0.5);
   padding: 10px 16px;
   background: rgb(103, 112, 243);
-  color: #f1f1f1;
-  z-index: +150;
-  position: relative;
 }
 
 .btn {

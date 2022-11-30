@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import * as React from 'react';
-import SearchFunc from './SearchFunction'
+import SearchFunc from './components/SearchFunction'
 
 const Search = ({}) => (
 

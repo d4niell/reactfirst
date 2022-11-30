@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import * as React from 'react';
-import buttonfunc from './ButtonFunction'
+import buttonfunc from './components/ButtonFunction'
 const Button = ({color,text}) => {
   return <button
    onClick={buttonfunc} 
