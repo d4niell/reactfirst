@@ -10,21 +10,21 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  max-width: 500px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
-  padding: 30px;
-  border-radius: 5px;
+
+.web-text {
+  text-align: center;
+
+
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(175, 180, 248, 0.5);
+  padding: 10px 16px;
+  background: rgb(103, 112, 243);
+  color: #f1f1f1;
+  z-index: +150;
+  position: relative;
 }
 
 .btn {
