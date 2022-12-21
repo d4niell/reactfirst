@@ -12,7 +12,7 @@ const Button = ({color,text}) => {
 
 Button.defaultProps = {
     color: 'black',
-    text: 'button'
+    text: 'Search'
 }
 Button.propTypes = {
     text: PropTypes.string,
