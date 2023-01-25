@@ -6,28 +6,20 @@ import './footer.css'
 const Footer = () => {
    return (
         <div className="footer">
-        <section>
-                <hr/>
-                <section>
+        <div className="col-1">
+            <h3>Useful links</h3>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+        </div>
 
-                </section>
-                        <section>
-     <section className="footer-info-left">
-        <section className="github">
-        <a href="https://github.com/d4niell">Github</a>
-        </section>
-     </section>
-        <section className="footer-info-right">
-                <section className="youtube">
-                        youtube
-                </section>
-         </section>
-         <section className="footer-info-center">
 
-        </section>
-      </section>   
-    </section>
-    </div>
+        <div className="col-2">
+                <h3>Important</h3>
+                <a href="#">write me an email</a>
+                <input type="text" placeholder="email address"></input>
+                <button>send</button>
+                </div>
+        </div>
    )
     
 }

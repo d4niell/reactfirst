@@ -31,20 +31,15 @@ fetchData();
     <div className="container">
      <Header />
      <Webtext />
-<div className="data-testing-place">
-<p>below this line will begin my testing of data usage</p>
-<tbody>
-  <tr>
-  <th>Ammattiala</th>
-  </tr>
-  {data.map((ala, lisaa) => (
-    <tr key={ala}>
-      <td>ala.ammattiala</td>
-      <td>lisaa.linkki</td>
-    </tr>
-  ))}
-</tbody>
-</div>
+     <ul>
+        {data &&
+          data.map(({ id, ammattiala }) => (
+            <li key={id}>
+              <h3>{ammattiala}</h3>
+            </li>
+          ))}
+      </ul>
+     <Footer />
     </div>
   );
 }
