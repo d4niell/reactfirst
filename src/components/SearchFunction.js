@@ -1,5 +1,5 @@
 import Search from '../Search'
-
+import showJobs from '../App'
 
 const SearchFunc = () => {
     console.log('executed')
@@ -21,7 +21,6 @@ const SearchFunc = () => {
     //This function runs when user has finished writing in input
     function finished_typing () {
         console.log("User finished typing");
-        //Do something here ...
     }
     
 }
