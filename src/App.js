@@ -8,45 +8,41 @@ import Footer from './components/footer/footer.js'
 
 
 function App() { 
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
- 
-  useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts?limit=1`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error(
-            `This is an HTTP error: The status is ${response.status}`
-          );
-        }
-        return response.json();
+ const [showJobs, setShowJobs] = useState()
+ const [filterText, setFilterText] = useState('');
+  const apiUrl = 'https://gis.vantaa.fi/rest/tyopaikat/v1/kaikki'
+  let displayData
+  function pullJson() {
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(responseData => {
+      displayData = responseData.map(function(tyopaikat) {
+        return (
+          <p key={tyopaikat.id}>{tyopaikat.organisaatio}</p>
+        )
       })
-      .then((actualData) => console.log(actualData))
-      .catch((err) => {
-        console.log(err.message);
-      });
-  }, []);
+      //console.log(responseData)
+      setShowJobs(displayData)
+    })
+    // return
+  }
+
+useEffect(() => {
+
+pullJson()
+
+}, [])
+
 
   return (
     <div className="container">
      <Header />
      <Webtext />
      <h1>testi nurkkaus</h1>
-      {loading && <div>A moment please...</div>}
-      {error && (
-        <div>{`There is a problem fetching the post data - ${error}`}</div>
-      )}
-      <ul>
-        {data &&
-          data.map(({ id, title }) => (
-            <li key={id}>
-              <h3>{title}</h3>
-            </li>
-          ))}
-      </ul>
+     {showJobs}
      <Footer />
     </div>
   );
 }
 export default App;
+export {showJobs}
