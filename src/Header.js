@@ -8,8 +8,7 @@ const Header = ({ title }) => {
         <header className='header'>
             
             <h2>my own website project</h2>
-            <Search/>
-            <Button/>
+            <h2>I HAD A SEARCH INPUT BACK IN THE DAY</h2>
             <h3>HTML | CSS | REACT | NODE</h3>
         </header>
 

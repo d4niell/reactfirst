@@ -15,7 +15,20 @@ body {
   text-align: center;
 }
 
-
+.JSONdata {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  position: sticky;
+  margin: 100px;
+  border-radius: 1px;
+  cursor: pointer;
+  text-align: right;
+  font-size: 10px;
+  font-family: inherit;
+}
 
 
 
